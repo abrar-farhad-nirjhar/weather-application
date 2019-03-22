@@ -7,7 +7,7 @@ class API{
 
     async getData(city){
 
-        let response = await fetch(this.URL+city+this.secondPart)
+        let response = await fetch(this.URL+city+"&units=metric"+this.secondPart)
 
         const data = response.json()
 
